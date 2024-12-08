@@ -1,11 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style3.css')}}">
+    <title>AI and Financial Portal</title>
 </head>
-
 <body>
+    <!-- Assignment1 -->
     <div class="container">
         <div class="content">
+            <!-- Past Content -->
             <p><strong>1. How do cloud platforms enable the storage and processing of large datasets required for real-world AI projects?</strong></p>
             <p>
                 Cloud platforms enable the storage and processing of large datasets for AI projects through scalable storage solutions, 
@@ -50,4 +54,106 @@
             </p>
         </div>
     </div>
+
+    <!-- New Financial Portal Section -->
+    <div class="container">
+        <h2>Financial Portal: Text Classification with TextBlob</h2>
+
+        <!-- Buttons for Navigation -->
+        <div class="button-container">
+            <button onclick="showSection('section1')">Text Classification</button>
+            <button onclick="showSection('section2')">Preprocessing Steps</button>
+            <button onclick="showSection('section3')">Machine Learning Algorithms</button>
+            <button onclick="showSection('section4')">Class Imbalance</button>
+            <button onclick="showSection('section5')">Transfer Learning</button>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="section1" class="section">
+            <h3>1. What is text classification, and why is it essential?</h3>
+            <p>
+                Text classification is the process of assigning predefined categories...
+                <ul>
+                    <li>Sentiment analysis</li>
+                    <li>Topic categorization</li>
+                    <li>Customer support automation</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="section2" class="section" style="display: none;">
+            <h3>2. Describe the preprocessing steps for text classification</h3>
+            <p>
+                Steps:
+                <ul>
+                    <li>Text cleaning</li>
+                    <li>Tokenization</li>
+                    <li>Normalization</li>
+                </ul>
+                Techniques for feature extraction:
+                <ul>
+                    <li>TF-IDF</li>
+                    <li>BERT</li>
+                    <li>fastText</li>
+                    <li>Word embeddings</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="section3" class="section" style="display: none;">
+            <h3>3. Common machine learning algorithms for text classification</h3>
+            <p>
+                Algorithms:
+                <ul>
+                    <li>Logistic Regression</li>
+                    <li>Decision Trees</li>
+                    <li>Support Vector Machines (SVM)</li>
+                </ul>
+                Metrics:
+                <ul>
+                    <li>Accuracy</li>
+                    <li>Precision</li>
+                    <li>Recall</li>
+                    <li>F1-score</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="section4" class="section" style="display: none;">
+            <h3>4. Challenge of imbalanced classes</h3>
+            <p>
+                Strategies:
+                <ul>
+                    <li>Synthetic data generation</li>
+                    <li>Class weighting</li>
+                    <li>Data augmentation</li>
+                    <li>Advanced algorithms</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="section5" class="section" style="display: none;">
+            <h3>5. Transfer learning and pretrained models</h3>
+            <p>
+                Advantages:
+                <ul>
+                    <li>Contextual embeddings</li>
+                    <li>Efficiency</li>
+                    <li>Generalization</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
+</html>
