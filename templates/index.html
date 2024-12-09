@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='style3.css')}}">
-    <title>AI and Financial Portal</title>
+    <title>AI Assignment Webpage</title>
 </head>
 <body>
     <!-- Assignment1 -->
@@ -83,64 +83,66 @@
         </div>
 
         <div id="section2" class="section" style="display: none;">
-            <h3>2. Describe the preprocessing steps for text classification</h3>
+            <h3>2. Describe the preprocessing steps involved in preparing text data for classification. Explain techniques for feature extraction, such as TF-IDF, BERT, fastTEXT and word embeddings.</h3>
             <p>
                 Steps:
                 <ul>
-                    <li>Text cleaning</li>
-                    <li>Tokenization</li>
-                    <li>Normalization</li>
+                    <li>Text cleaning: Removing irrelevant elements like punctuation, stopwords, or special characters.</li>
+                    <li>Tokenization: Splitting text into smaller units (tokens), such as words or subwords.</li>
+                    <li>Normalization: Lowercasing text and handling abbreviations or stemming/lemmatization.</li>
                 </ul>
                 Techniques for feature extraction:
                 <ul>
-                    <li>TF-IDF</li>
-                    <li>BERT</li>
-                    <li>fastText</li>
-                    <li>Word embeddings</li>
+                    <li>TF-IDF: Converts text into numerical features by calculating the term frequency (TF) multiplied by the inverse document frequency (IDF). It highlights important words in a document relative to a corpus.</li>
+                    <li>BERT: A deep contextualized embedding model that considers the meaning of words based on their surrounding context, offering state-of-the-art text representation.</li>
+                    <li>fastText: An extension of Word2Vec that includes subword information for better handling of rare and out-of-vocabulary words.</li>
+                    <li>Word embeddings: Techniques like Word2Vec and GloVe map words to dense vectors representing their meaning in context.</li>
                 </ul>
             </p>
         </div>
 
         <div id="section3" class="section" style="display: none;">
-            <h3>3. Common machine learning algorithms for text classification</h3>
+            <h3>3. Discuss common machine learning algorithms used for text classification, such as regression and decision tree. How are metrics like accuracy, precision, recall, and F1-score used to evaluate model performance?</h3>
             <p>
-                Algorithms:
+                Common machine learning algorithms:
                 <ul>
-                    <li>Logistic Regression</li>
-                    <li>Decision Trees</li>
-                    <li>Support Vector Machines (SVM)</li>
+                    <li>Logistic Regression: Suitable for binary classification tasks. It predicts probabilities and is easy to implement.</li>
+                    <li>Decision Trees: Splits data based on feature conditions but can overfit without proper pruning.</li>
+                    <li>Support Vector Machines (SVM): Effective for high-dimensional data, often used for text data with sparse features.</li>
                 </ul>
-                Metrics:
+                Evaluation metrics::
                 <ul>
-                    <li>Accuracy</li>
-                    <li>Precision</li>
-                    <li>Recall</li>
-                    <li>F1-score</li>
+                    <li>Accuracy: The percentage of correct predictions.</li>
+                    <li>Precision: The proportion of true positives out of all predicted positives.</li>
+                    <li>Recall: The proportion of true positives out of all actual positives.</li>
+                    <li>F1-score: The harmonic mean of precision and recall, balancing the trade-off between them.</li>
                 </ul>
             </p>
         </div>
 
         <div id="section4" class="section" style="display: none;">
-            <h3>4. Challenge of imbalanced classes</h3>
+            <h3>4. Explain the challenge of imbalanced classes in text classification. What strategies can be employed to address class imbalance and maintain model effectiveness?</h3>
             <p>
+                Challenge: In imbalanced datasets, one class dominates the others, which can lead to biased models that predict the majority class more often.
                 Strategies:
                 <ul>
-                    <li>Synthetic data generation</li>
-                    <li>Class weighting</li>
-                    <li>Data augmentation</li>
-                    <li>Advanced algorithms</li>
+                    <li>Synthetic data generation: Using methods like SMOTE (Synthetic Minority Over-sampling Technique) to generate synthetic minority class examples.</li>
+                    <li>Class weighting: Assigning higher weights to the minority class during training.</li>
+                    <li>Data augmentation: Expanding the dataset by paraphrasing or generating synthetic text.</li>
+                    <li>Advanced algorithms: Models like BERT can handle class imbalance better due to their pretraining on diverse data.</li>
                 </ul>
             </p>
         </div>
 
         <div id="section5" class="section" style="display: none;">
-            <h3>5. Transfer learning and pretrained models</h3>
+            <h3>5. Transfer Learning and Pretrained Models: What is transfer learning in the context of text classification? How can pre-trained language models like BERT and GPT enhance classification tasks?</h3>
             <p>
-                Advantages:
+                Transfer learning involves leveraging knowledge from a pre-trained model to solve a related but different task. It reduces the need for large labeled datasets and accelerates training.
+                The advantages of pre-trained models:
                 <ul>
-                    <li>Contextual embeddings</li>
-                    <li>Efficiency</li>
-                    <li>Generalization</li>
+                    <li>Contextual embeddings: Capture nuanced meanings of words based on their usage.</li>
+                    <li>Efficiency: Pre-trained models reduce the computational cost and time for training.</li>
+                    <li>Generalization: They generalize well to various NLP tasks due to their extensive pretraining on massive datasets.</li>
                 </ul>
             </p>
         </div>
